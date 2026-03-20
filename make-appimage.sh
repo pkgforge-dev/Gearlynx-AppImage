@@ -8,7 +8,6 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/drhelius/Gearlynx/refs/heads/main/platforms/shared/desktop/mcp/icon.png
-export DESKTOP=PATH_OR_URL_TO_DESKTOP_ENTRY
 export DEPLOY_GTK=1
 export DEPLOY_OPENGL=1
 

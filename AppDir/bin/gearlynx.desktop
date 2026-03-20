@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Gearlynx
+Comment=Atari Lynx emulator
+Exec=gearlynx
+Icon=icon
+StartupWMClass=
+Categories=Game;Emulator
+Terminal=false

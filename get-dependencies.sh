@@ -19,11 +19,13 @@ get-debloated-pkgs --add-common --prefer-nano
 #make-aur-package PACKAGENAME
 
 # If the application needs to be manually built that has to be done down here
+echo "Getting app..."
+echo "---------------------------------------------------------------"
+case "$ARCH" in # they use x64 and arm64
+	x86_64)  farch=x64;;
+	aarch64) farch=arm64;;
+esac
+wget https://file${farch}.zip
 
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+mkdir -p ./AppDir/bin
+bsdtar -xvf .zip -C ./AppDir/bin
